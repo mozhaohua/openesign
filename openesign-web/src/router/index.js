@@ -30,6 +30,16 @@ const routes = [
         path: 'documents/:id/sign',
         name: 'SignDocument',
         component: () => import('@/views/SignDocument.vue')
+      },
+      {
+        path: 'settings',
+        name: 'Settings',
+        component: () => import('@/views/Settings.vue')
+      },
+      {
+        path: 'templates',
+        name: 'Templates',
+        component: () => import('@/views/Templates.vue')
       }
     ],
     meta: { requiresAuth: true }

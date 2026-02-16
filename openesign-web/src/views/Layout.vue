@@ -16,6 +16,14 @@
           <el-icon><Document /></el-icon>
           <span>文档列表</span>
         </el-menu-item>
+        <el-menu-item index="/templates">
+          <el-icon><Files /></el-icon>
+          <span>模板管理</span>
+        </el-menu-item>
+        <el-menu-item index="/settings">
+          <el-icon><Setting /></el-icon>
+          <span>设置</span>
+        </el-menu-item>
       </el-menu>
     </el-aside>
     
@@ -40,7 +48,7 @@
 import { computed, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useAuthStore } from '@/store/auth'
-import { Document } from '@element-plus/icons-vue'
+import { Document, Setting, Files } from '@element-plus/icons-vue'
 
 const router = useRouter()
 const route = useRoute()
